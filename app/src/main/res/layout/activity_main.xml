@@ -11,10 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-28dp">
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="32dp"
@@ -24,9 +25,183 @@
             android:background="@drawable/backgroud_menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Samir Eslam"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="171dp"
+                android:layout_height="133dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iconpic1" />
+
+            <LinearLayout
+                android:layout_width="297dp"
+                android:layout_height="500dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.56">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="219dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Electrical Engineering student specializing in Power and Electrical Machines. Passionate about learning new technologies and developing mobile applications. Strong problem-solving and teamwork skills. Currently participating in the Digital Egypt Pioneers initiative to enhance my app development abilities."
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:text="19"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
+                        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="60dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ageicon" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Electrical Engineer"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toTopOf="@id/imageView6" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="62dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/job" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="20dp"
+                        android:text="PortSaid"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="76dp"
+                        android:layout_height="63dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/locationicon" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="344dp"
+                android:layout_height="111dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="133dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/inst" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="101dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/linked_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="102dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/face_icon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -44,10 +219,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="9dp"
                 android:layout_marginTop="19dp"
-                app:layout_constraintStart_toStartOf="parent"
                 android:contentDescription="@string/backicon"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/back" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="828dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
